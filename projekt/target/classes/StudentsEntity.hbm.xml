@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "hibernateClasses.StudentsEntity" table = "students">
+
+        <meta attribute = "class-description">
+            This class contains the StudentsEntity detail.
+        </meta>
+
+        <id name = "id" type = "int" column = "id">
+        </id>
+
+        <property name = "name" column = "name" type = "string"/>
+        <property name = "surname" column = "surname" type = "string"/>
+        <property name = "birthYear" column = "birthYear" type = "int"/>
+        <property name = "studiesYear" column = "studiesYear" type = "int"/>
+        <property name = "points" column = "points" type = "double"/>
+
+    </class>
+</hibernate-mapping>
